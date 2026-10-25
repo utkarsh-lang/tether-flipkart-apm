@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tether prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="stage">
+  <aside class="guide" aria-label="Walkthrough for reviewers">
+    <h1>Tether</h1>
+    <p class="lede">An independent auditor for your personal AI agent. This prototype follows Riya, 34, through one week in 2040.</p>
+    <ol class="steps" id="steps"></ol>
+    <p class="fine">Prototype only. All data is illustrative. Built with HTML, CSS and JS; no install needed.</p>
+  </aside>
+
+  <div class="phone">
+    <div class="status"><span>9:41</span><span>Week of 14 Oct 2040</span></div>
+    <main class="screen" id="screen" tabindex="-1"></main>
+    <nav class="tabs" id="tabs" hidden>
+      <button data-go="digest">Digest</button>
+      <button data-go="receipts">Receipts</button>
+      <button data-go="charter">Charter</button>
+      <button data-go="wheel">Keep the wheel</button>
+    </nav>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
